@@ -19,7 +19,7 @@ const DoubleButton: React.FC<Props> = ({ className, children, ...props }) => {
         &rsaquo;
       </div>
       <div
-        className={`rounded-xl px-4 mx-[1px]  py-2 flex items-center transition-all duration-500 ${
+        className={`rounded-xl px-4 mx-[1px] py-2 flex items-center transition-all duration-500 ${
           className ?? ""
         }`}
       >
