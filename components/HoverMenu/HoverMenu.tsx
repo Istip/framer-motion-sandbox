@@ -7,8 +7,8 @@ export default function HoverMenu({ text, className, content }: Props) {
   return (
     <div
       className={`${className ?? ""} 
-       w-full transition-all ease-in-out duration-500 cursor-pointer flex flex-coltext-orange-600 hover:text-stone-900 
-       relative overflow-hidden group py-10 px-5 hover:px-10 border-b border-orange-600/10 last:border-0`}
+       w-full transition-all ease-in-out duration-500 cursor-pointer flex flex-col text-orange-600 hover:text-stone-900 
+       relative overflow-hidden group py-10 px-5 hover:pl-10 hover:pr-40 border-b border-orange-600/10 last:border-0`}
     >
       <div className="flex items-center justify-between gap-10">
         <div className="relative z-[1] text-4xl tracking-tighter font-black">
