@@ -5,7 +5,7 @@ import Section from "@/components/Section/Section";
 
 export default function DoubleIconButtonApp() {
   return (
-    <Section className="flex flex-col items-center justify-center bg-stone-900">
+    <Section className="flex flex-col items-center justify-center bg-slaate-900">
       <DoubleButton className="font-light tracking-tighter text-white bg-lime-500">
         Watch case study
       </DoubleButton>
@@ -14,7 +14,7 @@ export default function DoubleIconButtonApp() {
         Watch case study
       </DoubleButton>
       <br />
-      <DoubleButton className="font-light tracking-tighter text-stone-900 bg-sky-500">
+      <DoubleButton className="font-light tracking-tighter text-lime-500 bg-sky-500">
         Watch case study
       </DoubleButton>
     </Section>

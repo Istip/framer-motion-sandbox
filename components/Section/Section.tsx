@@ -4,5 +4,5 @@ interface Props {
 }
 
 export default function Section({ children, className = "" }: Props) {
-  return <div className={`w-full h-screen  ${className}`}>{children}</div>;
+  return <div className={`w-full h-screen ${className}`}>{children}</div>;
 }

@@ -1,23 +1,31 @@
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   children: string;
+  left?: boolean;
 }
 
-const DoubleButton: React.FC<Props> = ({ className, children, ...props }) => {
+const DoubleButton: React.FC<Props> = ({
+  className,
+  children,
+  left,
+  ...props
+}) => {
   return (
     <button
       className={`flex items-center justify-center group rounded-xl 
       `}
       {...props}
     >
-      <div
-        className={`font-medium rounded-xl px-4 py-2 transition-all opacity-100 flex
+      {left && (
+        <div
+          className={`font-medium rounded-xl px-4 py-2 transition-all opacity-100 flex
         group-hover:p-0 group-hover:opacity-0 group-hover:text-[2px] duration-500 ${
           className ?? ""
         }`}
-      >
-        &rsaquo;
-      </div>
+        >
+          &rsaquo;
+        </div>
+      )}
       <div
         className={`rounded-xl px-4 mx-[1px] py-2 flex items-center transition-all duration-500 ${
           className ?? ""
